@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o Hover</title>
+    <style>
+        div > p {
+            display: none;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Palavra escondida</h1>
+    <p>Procure a palavra escondida</p>
+    <div>
+        Passe o mouse aqui...
+        <p>TEXTO ESCONDIDO HEHEHEHEHE</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>
