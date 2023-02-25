@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo o Modelo de Caixas</title>
+    <style>
+        h1, h2 {
+            width: 250px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            outline: solid 5px blue;
+        }
+
+        h1:hover, h2:hover {
+            text-decoration: underline;
+        }
+        #menuprincipal {
+            height: 150px;
+            background-image: linear-gradient(to right, darkorange,orange, rgba(255, 166, 0, 0.349));
+        }
+        #menusecundario {
+            height: 50px;
+            background-color: blue;
+        }
+        body {
+            margin: 0px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            margin: 10px;
+            background-color: darkblue;
+            color: white;
+            border: solid 2px white;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="menuprincipal"></div>
+    <div id="menusecundario">
+        <button>Login</button>
+    </div>
+    <h1>Exemplo de caixa</h1>
+    <h2>Testando a Margem</h2>
+</body>
+</html>
