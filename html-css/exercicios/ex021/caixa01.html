@@ -11,15 +11,18 @@
             width: 300px;
             height: 300px;
             border: 5px solid black;
-            padding: 5px;
-            margin: 10px;
+            padding: 5px 10px;
             outline: solid 5px blue;
+            margin: auto;
+            margin-top: 8px;
         }
 
         h1:hover{
+            transition: 2s;
+            rotate: -360deg;
             text-decoration: underline;
         }
-        #menuprincipal {
+        nav {
             height: 150px;
             background-image: linear-gradient(to right, darkorange,orange, rgba(255, 166, 0, 0.349));
         }
@@ -31,28 +34,64 @@
             margin: 0px;
         }
 
-        button {
-            width: 80px;
-            height: 30px;
-            margin: 10px;
+        .btn {
             background-color: darkblue;
             color: white;
             border: solid 2px white;
             border-radius: 12px;
             font-size: 20px;
+            text-align: center;
+            display: inline-block;
         }
 
-        button:hover {
+        #cadastro {
+            width: 100px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transition: 0.5s;
             background-color: black;
+        }
+
+        a {
+            border: dotted 5px red;
+            padding: 5px 10px;
+            margin: 10px 4px;
         }
     </style>
 </head>
 <body>
-    <div id="menuprincipal"></div>
+    <header>
+        <nav>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
+    </header>
     <div id="menusecundario">
-        <button>Login</button>
+        <button id="login" class="btn">Login</button>
+        <button id="cadastro" class="btn">Cadastro</button>
     </div>
-    <h1>Exemplo de caixa de box-level</h1>
-    <p>Testando um link <a href="#"></a> para ver como funciona o Inline-Level</p>
+    <section>
+        <h1>Exemplo de caixa de box-level</h1>
+    </section>
+    <aside>
+        <p>Artigo muito louco</p>
+    </aside>
+    <section>
+        <article>
+            <p>Olha esse artigo Man!</p>
+        </article>
+    </section>
+    <footer>
+        <p>Testando um link <a href="#">Link de teste</a> para ver como funciona o Inline-Level</p>
+    </footer>
 </body>
 </html>
