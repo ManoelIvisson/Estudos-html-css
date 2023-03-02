@@ -46,6 +46,7 @@ nav > a{
 }
 
 nav > a:hover {
+    transition: 0.5s;
     background-color: #3dda84;
 }
 
@@ -55,7 +56,8 @@ main {
     margin-top: 0px;
     width: 900px;
     height: 2350px;
-    border-radius: 0px 0px 10px 10px;;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.726);
 }
 
 h1, h2 {
@@ -98,6 +100,7 @@ aside {
     margin: auto;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.527);
 }
 
 aside > p {
@@ -135,4 +138,18 @@ ul {
 
 #direita {
     padding-left: 300px;
+}
+
+p > a::after {
+    content: '🔗';
+}
+
+p > a {
+    color: #3dda84;
+    text-decoration: none;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    color: #19b16d;
 }
