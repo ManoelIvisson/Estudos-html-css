@@ -54,6 +54,8 @@ main {
     margin: auto;
     margin-top: 0px;
     width: 900px;
+    height: 2350px;
+    border-radius: 0px 0px 10px 10px;;
 }
 
 h1, h2 {
@@ -94,7 +96,7 @@ aside {
     background-color: #c5ebd6;
     width: 850px;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     padding: 10px;
 }
 
@@ -103,11 +105,13 @@ aside > p {
 }
 
 h3 {
-    margin-top: 0px;
+    width: 850px;
+    margin: 0px auto;
     background-color: #195a37;
     color: white;
     font-family: sans-serif;
     padding: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 span {
@@ -123,4 +127,12 @@ footer > p {
     text-align: center;
     padding: 10px 0px;
     margin-bottom: 0px;
+}
+
+ul {
+    display: inline-block;
+}
+
+#direita {
+    padding-left: 300px;
 }
