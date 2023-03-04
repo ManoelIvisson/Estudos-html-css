@@ -2,10 +2,8 @@
 
 @font-face {
     font-family: 'idroid';
-    src: url('fontes/idroid.otf') format('opentype');
+    src: url('../fontes/idroid.otf') format('opentype');
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&display=swap');
 
 body {
     margin: 0px;
@@ -70,10 +68,6 @@ h1, h2 {
 
 h1 {
     font-size: 2em;
-}
-
-header > h1 {
-    font-family: 'Bebas-Neue';
 }
 
 h2 {
