@@ -1,8 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: 'idroid';
     src: url('../fontes/idroid.otf') format('opentype');
+}
+
+:root {
+    --cor-principal: #195a37;
+    --cor-secundaria: #3dda84;
+    --cor-terciaria: white;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -11,7 +28,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to top, #195a37, #3dda84);
+    background-image: linear-gradient(to top, var(--cor-principal), var(--cor-secundaria));
     height: 225px;
     margin: 0px;
 }
@@ -19,8 +36,8 @@ header {
 header > h1, header > p {
     padding-top: 20px;
     text-align: center;
-    color: white;
-    font-family: sans-serif;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-destaque);
     margin: 0px;
 }
 
@@ -37,7 +54,7 @@ nav {
 
 nav > a{
     text-decoration: none;
-    color: white;
+    color: var(--cor-terciaria);
     padding: 10px 20px;
     font-family: sans-serif;
     border-radius: 10px;
@@ -45,11 +62,11 @@ nav > a{
 
 nav > a:hover {
     transition: 0.5s;
-    background-color: #3dda84;
+    background-color: var(--cor-secundaria);
 }
 
 main {
-    background-color: white;
+    background-color: var(--cor-terciaria);
     margin: auto;
     margin-top: 0px;
     width: 900px;
@@ -61,8 +78,8 @@ main {
 h1, h2 {
     margin-top: 0px;
     padding: 10px 20px;
-    font-family: 'idroid';
-    color: #195a37;
+    font-family: var(--fonte-android);
+    color: var(--cor-principal);
     margin-bottom: 10px;
 }
 
@@ -81,7 +98,7 @@ p {
     text-indent: 20px;
     width: 875px;
     margin: 15px auto;
-    font: 20px sans-serif;
+    font: 20px var(--fonte-padrao);
 }
 
 article {
@@ -106,13 +123,13 @@ h3 {
     margin: 0px auto;
     background-color: #195a37;
     color: white;
-    font-family: sans-serif;
+    font-family: var(--fonte-padrao);
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
 }
 
-span {
-    color: #3dda84;
+strong {
+    color: var(--cor-principal);
 }
 
 footer {
@@ -139,11 +156,11 @@ p > a::after {
 }
 
 p > a {
-    color: #3dda84;
+    color: var(--cor-secundaria);
     text-decoration: none;
 }
 
 p > a:hover {
     text-decoration: underline;
-    color: #19b16d;
+    color: var(--cor-principal);
 }
