@@ -47,6 +47,7 @@ header > p {
     font-size: 1.2em;
     max-width: 600px;
     margin: auto;
+    margin-bottom: 20px;
     padding: 0px 10px;
 }
 
@@ -91,9 +92,27 @@ main .pequena {
     margin: auto;
 }
 
+.video {
+    background-color: var(--cor-principal);
+    margin: 0px -20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 h1, h2 {
     padding: 10px 20px;
     font-family: var(--fonte-android);
+    font-weight: normal;
     color: var(--cor-principal);
     margin-bottom: 10px;
 }
