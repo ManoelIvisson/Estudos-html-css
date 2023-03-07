@@ -86,13 +86,12 @@ main img {
 }
 
 main .pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
 h1, h2 {
-    margin-top: 0px;
     padding: 10px 20px;
     font-family: var(--fonte-android);
     color: var(--cor-principal);
@@ -111,8 +110,24 @@ h2 {
 
 main p {
     text-align: justify;
-    text-indent: 20px;
+    text-indent: 30px;
+    margin: 15px 0px;
     font: 20px var(--fonte-padrao);
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #195a37c7;
 }
 
 aside {
@@ -132,12 +147,14 @@ h3 {
     border-radius: 10px 10px 0px 0px;
 }
 
-strong {
-    color: var(--cor-principal);
+main strong {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    padding: 2px 4px;
 }
 
 footer {
-    background-color: #195a37;
+    background-color: var(--cor-principal);
 }
 
 footer > p {
@@ -157,14 +174,4 @@ ul {
 
 p > a::after {
     content: '🔗';
-}
-
-p > a {
-    color: var(--cor-secundaria);
-    text-decoration: none;
-}
-
-p > a:hover {
-    text-decoration: underline;
-    color: var(--cor-principal);
 }
