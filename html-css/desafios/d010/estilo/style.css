@@ -133,13 +133,19 @@ main a:hover {
 aside {
     background-color: #c5ebd6;
     margin: auto;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     padding: 10px;
-    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.527);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.227);
 }
 
-h3 {
-    margin: 0px auto;
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+}
+
+aside > h3 {
+    margin: -10px -10px 0px -10px;
     background-color: #195a37;
     color: white;
     font-family: var(--fonte-padrao);
@@ -150,28 +156,31 @@ h3 {
 main strong {
     color: var(--cor-secundaria);
     font-weight: bold;
-    padding: 2px 4px;
 }
 
 footer {
     background-color: var(--cor-principal);
+    text-align: center;
+    padding: 5px;
 }
 
 footer > p {
-    color: white;
-    text-align: center;
-    padding: 10px 0px;
-    margin-bottom: 0px;
+    color: var(--cor-terciaria);
+    padding: 5px;
+    font-family: var(--fonte-padrao);
 }
 
-ul {
-    display: inline-block;
+footer a {
+    color: var(--cor-terciaria);
+    font-weight: bold;
+    text-decoration: none;
 }
 
-#direita {
-    padding-left: 300px;
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria);
 }
 
-p > a::after {
-    content: '🔗';
+main p > a::after {
+    content: ' 🔗';
 }
