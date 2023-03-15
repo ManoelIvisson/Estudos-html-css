@@ -21,7 +21,23 @@ header h1 {
     padding-top: 80px;
 }
 
+header a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
 main p {
     font: normal 2em 'Sriracha';
     text-justify: left;
+}
+
+main section {
+    padding: 100px 50px;
+}
+
+#joaninha {
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    color: white;
 }
