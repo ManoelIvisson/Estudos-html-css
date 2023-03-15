@@ -4,40 +4,87 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive; 
+}
+
 * {
     margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
     background-color: black;
     text-align: center;
     color: white;
-    min-height: 250px;
-    font-family: sans-serif;
+    font-family: var(--fonte01);
 }
 
 header h1 {
-    font: normal bold 5em 'Passion One', cursive;
-    padding-top: 80px;
+    font: normal bold 8vw var(--fonte02);
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-header a {
-    font-weight: bold;
+header p {
+    padding-bottom: 50px;
+}
+
+a {
+    font-weight: bolder;
     text-decoration: none;
     color: white;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 main p {
-    font: normal 2em 'Sriracha';
+    font: normal 3vw var(--fonte03);
     text-justify: left;
 }
 
-main section {
-    padding: 100px 50px;
+section {
+    padding: 10vh 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.658);
+    background-size: cover;
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.507);
+    display: inline-block;
+    padding: 5px;
 }
 
 #joaninha {
     background-image: url('../imagens/background001.jpg');
-    background-size: cover;
+}
+
+#folhas {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    background-color: black;
     color: white;
+    text-align: center;
+    padding: 10px;
 }
