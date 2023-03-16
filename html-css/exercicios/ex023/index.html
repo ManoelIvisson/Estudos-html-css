@@ -15,32 +15,40 @@
             border-collapse: collapse;
         }
 
+        tr.linha {
+            background-color: gray;
+        }
+
         td {
             border: 1px dashed black;
             padding: 8px;
+        }
+
+        td.yellow {
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
     <h1>Minha primeira Tabela</h1>
     <table>
-        <tr> <!--Primeira linha-->
+        <tr class="linha"> <!--Primeira linha-->
             <td>A1</td>
             <td>B1</td>
-            <td>C1</td>
+            <td class="yellow">C1</td>
         </tr>
         <tr> <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr> <!--Terceira linha-->
+        <tr class="linha"> <!--Terceira linha-->
             <td>A3</td>
-            <td>B3</td>
+            <td class="yellow">B3</td>
             <td>C3</td>
         </tr>
         <tr> <!--Quarta linha-->
-            <td>A4</td>
+            <td class="yellow">A4</td>
             <td>B4</td>
             <td>C4</td>
         </tr>
