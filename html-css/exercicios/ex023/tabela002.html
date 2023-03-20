@@ -19,7 +19,7 @@
 
         td, th {
             border: 1px solid black;
-            padding: 10px;
+            padding: 30px 10px;
             text-align: left;
         }
 
@@ -36,7 +36,13 @@
         }
 
         thead, tfoot {
-            background-color: rgba(128, 128, 128, 0.247);
+            background-color: rgba(128, 128, 128);
+        }
+
+        thead > tr> th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(66, 66, 66);
         }
 
         tbody tr:nth-child(odd) { /* 2n-1 */
@@ -90,6 +96,21 @@
                 <td>Rio Grande do Sul</td>
                 <td class="num">11.000.000</td>
                 <td>5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.000.000</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.900.000</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.000.000</td>
+                <td>4,4%</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
