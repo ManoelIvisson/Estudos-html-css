@@ -9,6 +9,7 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
 
         caption {
@@ -24,9 +25,10 @@
 
         td:hover, th:hover {
             transition: 0.5s;
-            background-image: linear-gradient(to right, rgba(139, 0, 0, 0.726), rgba(255, 0, 0, 0.493));
-            border: 1px solid darkred;
+            background-color: black;
+            border: 1px solid gray;
             font-size: 1.2em;
+            color: white;
         }
 
         .num {
@@ -35,6 +37,14 @@
 
         thead, tfoot {
             background-color: rgba(128, 128, 128, 0.247);
+        }
+
+        tbody tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) { /* 2n */
+            background-color: gray;
         }
     </style>
 </head>
