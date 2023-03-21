@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de nomes e filmes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .mulheres td:hover {
+            transition: 0.5s;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .homens td:hover {
+            transition: 0.5s;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="col" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="mulheres">
+                <th scope="row" rowspan="3">Mulheres</th>
+                <td>Cristina Lindona</td>
+                <td>Luther</td>
+                <td>Guerra Mundial Z</td>
+                <td>A prova de Fogo</td>
+            </tr>
+            <tr class="mulheres">
+                <td>Yasmin Bonitona</td>
+                <td>Cartas para mim</td>
+                <td>Dorama para que te quero!</td>
+                <td>Megamente</td>
+            </tr>
+            <tr class="mulheres">
+                <td>Jeniffer misteriosa</td>
+                <td>Scooby-Doo!</td>
+                <td>Circulo de Fogo</td>
+                <td>Hotel Transilvânia</td>
+            </tr>
+            <tr class="homens">
+                <th scope="row" rowspan="3">Homens</th>
+                <td>Manoel do Pastel</td>
+                <td>Vingadores</td>
+                <td>Hulk</td>
+                <td>Batman</td>
+            </tr>
+            <tr class="homens">
+                <td>Ivanaldo Ronaldo</td>
+                <td>Wall-E</td>
+                <td>Naruto</td>
+                <td>Chaves! O Filme</td>
+            </tr>
+            <tr class="homens">
+                <td>Yago do Lago</td>
+                <td>Relampago Marquinhos</td>
+                <td>Gambito do Gambith</td>
+                <td>Harry Potter</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
