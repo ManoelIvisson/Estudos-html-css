@@ -23,11 +23,26 @@
                 <label for="itel">Telefone</label>
                 <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(xx)xxxx-xxxx">
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências gerais</legend>
             <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
+                <label for="iinstru">Instrumento </label>
+                <input type="text" name="instru" id="iinstru" required>
+            </p>
+            <p>
+                <label for="ivideogame">Videogame </label>
+                <input type="text" name="videogame" id="ivideogame">
+            </p>
+            <p>
+                <label for="ilivro">Livro </label>
+                <input type="text" name="livro" id="ilivro">
             </p>
         </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
