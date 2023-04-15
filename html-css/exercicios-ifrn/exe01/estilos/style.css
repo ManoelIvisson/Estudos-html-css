@@ -14,11 +14,10 @@ h1 {
     color: white;
 }
 
-header div {
+header > div, div#borda {
     background-color: black;
     border-radius: 100px 0px 0px 100px;
     max-width: 775px;
-    max-height: 190px;
     padding: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
     margin: auto;
@@ -27,7 +26,6 @@ header div {
 div#borda {
    border: 5px solid white;
    max-width: 800px;
-   max-height: 190px;
    padding: 0px;
 }
 
