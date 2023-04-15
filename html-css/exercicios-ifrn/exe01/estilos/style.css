@@ -10,8 +10,6 @@ body {
 }
 
 h1 {
-    position: absolute;
-    top: 90px;
     display: inline;
     color: white;
 }
@@ -61,4 +59,14 @@ p {
 
 strong {
     text-decoration: underline;
+}
+
+span {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+span:hover {
+    transition: 0.5s;
+    padding: 2px;
 }
