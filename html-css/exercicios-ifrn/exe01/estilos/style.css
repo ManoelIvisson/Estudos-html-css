@@ -43,6 +43,13 @@ main {
     background-color: black;
 }
 
+main img {
+    display: block;
+    margin: auto;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
 section {
     background-color: black;
     border: 5px solid white;
@@ -51,8 +58,18 @@ section {
 p {
     text-indent: 30px;
     text-align: justify;
+    line-height: 25px;
     padding: 10px;
     color: white;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 strong {
