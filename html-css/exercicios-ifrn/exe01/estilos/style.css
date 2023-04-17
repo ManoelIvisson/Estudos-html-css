@@ -37,10 +37,10 @@ img {
 main {
     max-width: 700px;
     margin: auto;
-    border: 1px solid black;
     margin-top: 25px;
     padding: 10px;
     background-color: black;
+    box-shadow: 1px 1px 5px black;
 }
 
 main img {
