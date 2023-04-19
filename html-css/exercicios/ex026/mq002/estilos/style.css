@@ -10,11 +10,17 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-size: contain;
+    background-color: #233eff;
+    background-repeat: no-repeat;
 }
 
 h1 {
     color: white;
-    text-shadow: 3px 3px 0px #332ffe;
+    text-shadow: 3px 3px 0px #330aae;
     padding: 10px;
+}
+
+p {
+    color: black;
 }
