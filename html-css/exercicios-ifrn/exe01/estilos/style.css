@@ -87,3 +87,18 @@ span:hover {
     transition: 0.5s;
     padding: 2px;
 }
+
+footer {
+    margin: auto;
+    margin-top: 25px;
+    max-width: 775px;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 0px 100px 100px 0px;
+}
+
+footer section {
+    max-width: 775px;
+    margin: auto;
+    border-radius: 0px 100px 100px 0px;
+}
