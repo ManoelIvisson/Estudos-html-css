@@ -74,10 +74,13 @@ p {
     color: white;
 }
 
+main a {
+    font-style: italic;
+}
+
 a {
     color: cyan;
     text-decoration: none;
-    font-style: italic;
 }
 
 a:hover {
