@@ -21,6 +21,25 @@
     }
 }
 
+@media print {
+    h1 {
+        color: #ff3eff;
+        background-image: url("../imagens/cev-portrait.jpg");
+    }
+
+    h1::after {
+        content: "Sou uma impressora";
+    }
+
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-size: contain;
+        background-color: #233eff;
+        background-repeat: no-repeat;
+    }
+}
+
 /* Declarações retrato */
 
 @media screen and (orientation:portrait) {
