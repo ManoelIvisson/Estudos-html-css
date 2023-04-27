@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burger" class="material-symbols-outlined" onclick="cliqueMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
                 <li><a href="">Opção 2</a></li>
@@ -32,5 +35,15 @@
             <p>Fonte: <a href="https://g1.globo.com/inovacao/ao-vivo/empresa-japao-pouso-historico-na-lua.ghtml" target="_blank" rel="external">G1 - Empresa tenta pouso lunar histórico, mas perde comunicação com a sonda</a></p>
         </article>
     </main>
+
+    <script>
+        function cliqueMenu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
