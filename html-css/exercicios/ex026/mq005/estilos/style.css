@@ -27,6 +27,8 @@ header > menu > ul > li > a {
 i > span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    position: relative;
+    top: -5px;
 }
 
 menu > ul > li > a:hover {
