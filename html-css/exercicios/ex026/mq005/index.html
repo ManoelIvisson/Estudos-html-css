@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <i id="burger" class="material-symbols-outlined" onclick="cliqueMenu()">menu</i>
+        <i id="burger" class="material-symbols-outlined" onclick="cliqueMenu()"><span>Inicio</span>menu</i>
         <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
@@ -39,6 +39,14 @@
     <script>
         function cliqueMenu() {
             if (itens.style.display == 'none') {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
